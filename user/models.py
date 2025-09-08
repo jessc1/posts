@@ -44,6 +44,7 @@ class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
     is_superuser = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now=True)
     updated = models.DateTimeField(auto_now_add=True) 
+    posts_liked = models.ManyToManyField("post.Post", related_name="liked_by")
 
     USERNAME_FIELD = "username"
     EMAIL_FIELD = "email"    
@@ -56,6 +57,15 @@ class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.full_name
+    
+    def like(self, post):
+        return self.posts_liked.add(post)
+    
+    def remove_like(self, post):
+        return self.posts_liked.remove(post)
+    
+    def has_liked(self, post):
+        return self.posts_liked.filter(pk=post.pk).exists()
 
 
 
