@@ -9,14 +9,16 @@ class PostSerializer(AbstractSerializer):
 
     class Meta:
             model = Post
-            fields = ['id', 'author', 'created', 'updated', 'title', 'content']
-
-    
+            fields = ['id', 'author', 'created', 'updated', 'title', 'content']    
 
     def validate_author(self, value):
         if self.context["request"].user != value:
             raise ValidationError("Not permitted create post for the following user")
-        return value
+        return value    
+    
+    
+
+   
 
         
         
