@@ -13,14 +13,12 @@ class CommentViewSet(AbstractViewSet):
     serializer_class = CommentSerializer
 
     def get_queryset(self):
-        print('self', self.request.user)
         if self.request.user.is_superuser:
             return Comment.objects.all()
         post_pk = self.kwargs['post_pk']
         if post_pk is None:
             return Http404
         queryset = Comment.objects.filter(post__id=post_pk)
-        print('queryset', queryset)
 
         return queryset
 
@@ -36,3 +34,8 @@ class CommentViewSet(AbstractViewSet):
         self.perform_create(serializer)
 
         return Response(serializer.data, status=status.HTTP_201_CREATED)
+    
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        self.perform_destroy(instance)
+        return Response({}, status=status.HTTP_200_OK)
