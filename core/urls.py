@@ -22,6 +22,8 @@ urlpatterns = [
     path('api/', include(("user.routers", "users"), namespace="users")),
     path('api/', include(("auth.routers", "auth"), namespace="auth")),
     path('api/', include(("post.routers", "posts"), namespace="posts")),
+    path('api/', include(("comment.routers", "comment"), namespace="comments")),
+
 
     
 
