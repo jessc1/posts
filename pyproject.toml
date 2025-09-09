@@ -17,4 +17,4 @@ dependencies = [
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "core.settings"
-python_files = ["test_*.py", "*_test.py"]
+python_files = ["test_*.py","*tests.py"]
