@@ -45,7 +45,7 @@ class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
     created = models.DateTimeField(auto_now=True)
     updated = models.DateTimeField(auto_now_add=True) 
     posts_liked = models.ManyToManyField("post.Post", related_name="liked_by")
-
+    comments_liked = models.ManyToManyField("comment.Comment", related_name="commented_by")
     USERNAME_FIELD = "username"
     EMAIL_FIELD = "email"    
 
@@ -66,6 +66,15 @@ class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
     
     def has_liked(self, post):
         return self.posts_liked.filter(pk=post.pk).exists()
+    
+    def like_comment(self, comment):
+        return self.comments_liked.add(comment)
+    
+    def remove_like_comment(self, comment):
+        return self.comments_liked.remove(comment)
+    
+    def has_liked_comment(self, comment):
+        return self.comments_liked.filter(pk=comment.pk).exists()
 
 
 

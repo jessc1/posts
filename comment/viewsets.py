@@ -5,6 +5,7 @@ from abstract.viewsets import AbstractViewSet
 from comment.models import Comment
 from comment.serializers import CommentSerializer
 from auth.permissions import UserPermission
+from rest_framework.decorators import action
 
 
 class CommentViewSet(AbstractViewSet):
@@ -39,3 +40,21 @@ class CommentViewSet(AbstractViewSet):
         instance = self.get_object()
         self.perform_destroy(instance)
         return Response({}, status=status.HTTP_200_OK)
+    
+    @action(methods=["post"], detail=True)
+    def like(self, request, *args, **kwargs):
+        comment = self.get_object()
+        user = self.request.user
+        user.like_comment(comment)
+        serializer = self.serializer_class(comment)
+        
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    @action(methods=["post"], detail=True)
+    def remove_like(self, request, *args, **kwargs):
+        comment = self.get_object()
+        user = self.request.user
+        user.remove_like_comment(comment)
+        serializer = self.serializer_class(comment)
+        
+        return Response(serializer.data, status=status.HTTP_200_OK)
