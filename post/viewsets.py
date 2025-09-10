@@ -1,4 +1,3 @@
-from rest_framework.permissions import IsAuthenticated
 from abstract.viewsets import AbstractViewSet
 from .models import Post
 from .serializers import PostSerializer
@@ -10,7 +9,7 @@ from rest_framework.decorators import action
 
 class PostViewSet(AbstractViewSet):
     http_method_names = ('post','get','patch', 'delete')
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (UserPermission,)
     serializer_class = PostSerializer
 
     def get_queryset(self):

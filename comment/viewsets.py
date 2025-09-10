@@ -18,7 +18,7 @@ class CommentViewSet(AbstractViewSet):
         post_pk = self.kwargs['post_pk']
         if post_pk is None:
             return Http404
-        queryset = Comment.objects.filter(post__id=post_pk)
+        queryset = Comment.objects.filter(post_id=post_pk)
 
         return queryset
 
