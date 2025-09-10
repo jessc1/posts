@@ -2,14 +2,18 @@ from abstract.viewsets import AbstractViewSet
 from .models import Post
 from .serializers import PostSerializer
 from rest_framework import status
+from rest_framework import filters
 from rest_framework.response import Response
 from auth.permissions import UserPermission
 from rest_framework.decorators import action
 
-
 class PostViewSet(AbstractViewSet):
     http_method_names = ('post','get','patch', 'delete')
     permission_classes = (UserPermission,)
+    ordering_fields = ['author', 'title', 'content']
+    ordering = ['title']
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['title', 'content', 'author']
     serializer_class = PostSerializer
 
     def get_queryset(self):
