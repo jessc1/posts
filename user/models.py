@@ -3,6 +3,9 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, Permis
 from django.core.exceptions import ObjectDoesNotExist
 from abstract.models import AbstractModel
 
+def user_directory_path(instance, filename):
+    return 'user_{0}/{1}'.format(instance.id, filename)
+
 class UserManager(BaseUserManager):
     def create_user(self, username, email, password=None, **kwargs):
         """Creating a user with username, email and passowrd"""
@@ -46,6 +49,7 @@ class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
     updated = models.DateTimeField(auto_now_add=True) 
     posts_liked = models.ManyToManyField("post.Post", related_name="liked_by")
     comments_liked = models.ManyToManyField("comment.Comment", related_name="commented_by")
+    avatar = models.ImageField(null=True, blank=True, upload_to=user_directory_path)
     USERNAME_FIELD = "username"
     EMAIL_FIELD = "email"    
 

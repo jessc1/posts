@@ -141,6 +141,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "uploads"
+
+# Default avatar URL
+
+DEFAULT_AVATAR_URL = "https://api.dicebear.com/9.x/icons/svg"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
