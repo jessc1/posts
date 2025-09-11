@@ -6,6 +6,7 @@ from rest_framework import filters
 from rest_framework.response import Response
 from auth.permissions import UserPermission
 from rest_framework.decorators import action
+from django.core.cache import cache
 
 class PostViewSet(AbstractViewSet):
     http_method_names = ('post','get','patch', 'delete')
@@ -13,12 +14,12 @@ class PostViewSet(AbstractViewSet):
     ordering_fields = ['author', 'title', 'content']
     ordering = ['title']
     filter_backends = [filters.SearchFilter]
-    search_fields = ['title', 'content', 'author']
+    search_fields = ['title', 'content', 'author__username']
     serializer_class = PostSerializer
 
     def get_queryset(self):
-        return Post.objects.all()
-
+        return Post.objects.all()  
+    
     def get_object_by_id(self):
         obj = Post.objects.get(self.kwargs['pk'])
         return obj

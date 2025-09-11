@@ -13,6 +13,8 @@ frameworks:  django, django rest framework. database: postgres
 * Like comment : localhost:8000/api/comment/8/like/
 * Remove Like in comment: localhost:8000/api/comment/id/remove_like/
 * Filter Post: http://localhost:8000/api/posts/?search=title
+* Ordering Post: http://localhost:8000/api/posts/?ordering=author
+
 
 commands:
 

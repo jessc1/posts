@@ -1,7 +1,10 @@
+import pytest
 from rest_framework import status
 from fixtures.user import user
 from fixtures.post import post
 from configtest import client
+from django.urls import reverse
+from django.core.cache import cache
 
 class TestPostViewSet:
     endpoint ='/api/posts/'
@@ -61,6 +64,8 @@ class TestPostViewSet:
     def test_delete_anonymous(self, client, post):
         response = client.delete(self.endpoint + str(post.id) + "/")
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
+        
+
 
 
         

@@ -10,9 +10,10 @@ class UserSerializer(AbstractSerializer):
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        if not representation["avatar"]:
+        avatar_url = representation.get("avatar")
+        if not avatar_url:
             representation["avatar"] = settings.DEFAULT_AVATAR_URL
-            return representation
+        return representation
 
     class Meta:
         model = User 
