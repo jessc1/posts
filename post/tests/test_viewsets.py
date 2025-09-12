@@ -2,7 +2,7 @@ import pytest
 from rest_framework import status
 from fixtures.user import user
 from fixtures.post import post
-from configtest import client
+from configtest import client, clear_cache
 from django.urls import reverse
 from django.core.cache import cache
 
@@ -64,6 +64,14 @@ class TestPostViewSet:
     def test_delete_anonymous(self, client, post):
         response = client.delete(self.endpoint + str(post.id) + "/")
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
+
+    @pytest.mark.django_db
+    def test_cached_posts(self, client, clear_cache, post):
+        response = client.get(self.endpoint)
+        assert response.status_code == 200
+
+        response1 = client.get(self.endpoint)
+        assert response1.status_code == 200
         
 
 

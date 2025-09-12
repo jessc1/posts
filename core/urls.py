@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+import debug_toolbar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,8 +25,9 @@ urlpatterns = [
     path('api/', include(("auth.routers", "auth"), namespace="auth")),
     path('api/', include(("post.routers", "posts"), namespace="posts")),
     path('api/', include(("comment.routers", "comment"), namespace="comments")),
-
-
-    
-
 ]
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns

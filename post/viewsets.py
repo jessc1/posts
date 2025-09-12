@@ -17,8 +17,13 @@ class PostViewSet(AbstractViewSet):
     search_fields = ['title', 'content', 'author__username']
     serializer_class = PostSerializer
 
-    def get_queryset(self):
-        return Post.objects.all()  
+    def get_queryset(self):  
+        posts = cache.get('post_objects')
+        if not posts:
+            posts = Post.objects.all()            
+            cache.set('post_objects', posts)
+        return posts
+        
     
     def get_object_by_id(self):
         obj = Post.objects.get(self.kwargs['pk'])
