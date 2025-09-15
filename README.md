@@ -19,7 +19,7 @@ frameworks:  django, django rest framework. database: postgres
 commands:
 
  start the django server
-```
+```staa
  uv run python manage.py runserver
 ```
 
