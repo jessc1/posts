@@ -1,0 +1,101 @@
+2025-09-12 18:55:29,667 (INFO)- post.viewsets- Post requests
+2025-09-12 18:55:29,688 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-12 18:55:30,648 (INFO)- post.viewsets- Post requests
+2025-09-12 18:55:30,650 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-12 18:55:32,510 (INFO)- post.viewsets- Post requests
+2025-09-12 18:55:32,511 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-12 18:55:33,415 (INFO)- post.viewsets- Post requests
+2025-09-12 18:55:33,416 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-12 18:55:34,346 (INFO)- post.viewsets- Post requests
+2025-09-12 18:55:34,347 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-12 18:55:35,268 (INFO)- post.viewsets- Post requests
+2025-09-12 18:55:35,269 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-12 18:55:36,262 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-12 18:55:37,215 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-12 18:55:38,114 (INFO)- post.viewsets- Post requests
+2025-09-12 18:55:38,116 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-12 18:55:38,123 (INFO)- post.viewsets- Post requests
+2025-09-12 18:55:42,100 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-12 18:56:26,361 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-09-12 19:01:01,555 (INFO)- post.viewsets- Post requests
+2025-09-12 19:01:01,797 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-12 19:01:19,736 (INFO)- post.viewsets- Post requests
+2025-09-15 18:08:29,752 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-09-15 18:09:14,705 (INFO)- django.utils.autoreload- /mnt/c/users/Maria Jessica/downloads/codeleap/core/urls.py changed, reloading.
+2025-09-15 18:09:42,992 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-09-15 18:10:15,166 (INFO)- post.viewsets- Post requests
+2025-09-15 18:10:29,744 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-15 18:10:30,443 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:30,502 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:30,511 (INFO)- post.viewsets- Post requests
+2025-09-15 18:10:30,547 (INFO)- post.viewsets- Post requests
+2025-09-15 18:10:30,560 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:30,568 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:30,580 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:30,590 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:30,602 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:28,153 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:28,160 (INFO)- post.viewsets- Post requests
+2025-09-15 18:10:28,162 (INFO)- post.viewsets- Post requests
+2025-09-15 18:10:28,165 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'
+2025-09-15 18:10:28,171 (WARNING)- drf_yasg.inspectors.base- view's CommentViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
+    post_pk = self.kwargs['post_pk']
+KeyError: 'post_pk'

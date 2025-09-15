@@ -7,6 +7,9 @@ from rest_framework.response import Response
 from auth.permissions import UserPermission
 from rest_framework.decorators import action
 from django.core.cache import cache
+import logging
+
+logger = logging.getLogger( __name__ )
 
 class PostViewSet(AbstractViewSet):
     http_method_names = ('post','get','patch', 'delete')
@@ -17,9 +20,11 @@ class PostViewSet(AbstractViewSet):
     search_fields = ['title', 'content', 'author__username']
     serializer_class = PostSerializer
 
-    def get_queryset(self):  
+    def get_queryset(self):
+        logger.info("Post requests")
         posts = cache.get('post_objects')
         if not posts:
+            logger.warning("POST request received com no results.")
             posts = Post.objects.all()            
             cache.set('post_objects', posts)
         return posts

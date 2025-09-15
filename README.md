@@ -2,7 +2,7 @@ Post API
 
 frameworks:  django, django rest framework. database: postgres
 
-## Endpoints:
+## Endpoints:  http://127.0.0.1:8000/swagger/
 * To get access to the api is necessary to register in  http://127.0.0.1:8000/api/auth/register/, with the username, email and password,
    copy the refresh token in the http://127.0.0.1:8000/api/auth/refresh/ to get the access token, then copy the access token in the others endpoints
 * Login:  http://127.0.0.1:8000/api/auth/login/
