@@ -6,6 +6,7 @@ from comment.models import Comment
 from comment.serializers import CommentSerializer
 from auth.permissions import UserPermission
 from rest_framework.decorators import action
+from services.comment_service import CommentService
 
 
 class CommentViewSet(AbstractViewSet):
@@ -14,12 +15,13 @@ class CommentViewSet(AbstractViewSet):
     serializer_class = CommentSerializer
 
     def get_queryset(self):
+        comment = CommentService.list()
         if self.request.user.is_superuser:
-            return Comment.objects.all()
+            return comment
         post_pk = self.kwargs['post_pk']
         if post_pk is None:
             return Http404
-        queryset = Comment.objects.filter(post_id=post_pk)
+        queryset = comment.objects.filter(post_id=post_pk)
 
         return queryset
 

@@ -99,3 +99,199 @@ Traceback (most recent call last):
   File "/mnt/c/users/Maria Jessica/downloads/codeleap/comment/viewsets.py", line 19, in get_queryset
     post_pk = self.kwargs['post_pk']
 KeyError: 'post_pk'
+2025-09-16 15:00:37,729 (INFO)- post.viewsets- Post requests
+2025-09-16 15:00:38,115 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-16 15:00:40,620 (INFO)- post.viewsets- Post requests
+2025-09-16 15:00:40,623 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-16 15:00:40,863 (INFO)- post.viewsets- Post requests
+2025-09-16 15:00:40,891 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-16 15:00:42,347 (INFO)- post.viewsets- Post requests
+2025-09-16 15:00:42,386 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-16 15:00:44,335 (INFO)- post.viewsets- Post requests
+2025-09-16 15:00:44,336 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-16 15:00:45,570 (INFO)- post.viewsets- Post requests
+2025-09-16 15:00:45,571 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-16 15:00:46,835 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 15:00:48,127 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 15:00:49,465 (INFO)- post.viewsets- Post requests
+2025-09-16 15:00:49,467 (WARNING)- post.viewsets- POST request received com no results.
+2025-09-16 15:00:49,478 (INFO)- post.viewsets- Post requests
+2025-09-16 15:00:54,485 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 15:24:58,471 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-09-16 17:34:49,858 (INFO)- post.viewsets- Post requests
+2025-09-16 17:34:51,546 (INFO)- post.viewsets- Post requests
+2025-09-16 17:34:53,959 (INFO)- post.viewsets- Post requests
+2025-09-16 17:34:55,034 (INFO)- post.viewsets- Post requests
+2025-09-16 17:34:56,162 (INFO)- post.viewsets- Post requests
+2025-09-16 17:34:57,314 (INFO)- post.viewsets- Post requests
+2025-09-16 17:34:58,497 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 17:34:59,459 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 17:35:00,428 (INFO)- post.viewsets- Post requests
+2025-09-16 17:35:00,436 (INFO)- post.viewsets- Post requests
+2025-09-16 17:35:04,812 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 17:37:17,490 (INFO)- post.viewsets- Post requests
+2025-09-16 17:37:18,476 (INFO)- post.viewsets- Post requests
+2025-09-16 17:37:20,331 (INFO)- post.viewsets- Post requests
+2025-09-16 17:37:21,289 (INFO)- post.viewsets- Post requests
+2025-09-16 17:37:22,226 (INFO)- post.viewsets- Post requests
+2025-09-16 17:37:23,182 (INFO)- post.viewsets- Post requests
+2025-09-16 17:37:24,141 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 17:37:25,077 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 17:37:25,988 (INFO)- post.viewsets- Post requests
+2025-09-16 17:37:25,996 (INFO)- post.viewsets- Post requests
+2025-09-16 17:37:29,757 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 17:51:33,030 (INFO)- post.viewsets- Post requests
+2025-09-16 17:51:34,389 (INFO)- post.viewsets- Post requests
+2025-09-16 17:51:36,372 (INFO)- post.viewsets- Post requests
+2025-09-16 17:51:37,371 (INFO)- post.viewsets- Post requests
+2025-09-16 17:51:38,388 (INFO)- post.viewsets- Post requests
+2025-09-16 17:51:39,435 (INFO)- post.viewsets- Post requests
+2025-09-16 17:51:40,604 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 17:51:41,630 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 17:51:42,899 (INFO)- post.viewsets- Post requests
+2025-09-16 17:51:42,908 (INFO)- post.viewsets- Post requests
+2025-09-16 17:51:47,269 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 17:54:01,354 (INFO)- post.viewsets- Post requests
+2025-09-16 17:54:02,365 (INFO)- post.viewsets- Post requests
+2025-09-16 17:54:04,298 (INFO)- post.viewsets- Post requests
+2025-09-16 17:54:05,269 (INFO)- post.viewsets- Post requests
+2025-09-16 17:54:06,230 (INFO)- post.viewsets- Post requests
+2025-09-16 17:54:07,215 (INFO)- post.viewsets- Post requests
+2025-09-16 17:54:08,186 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 17:54:09,252 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 17:54:10,270 (INFO)- post.viewsets- Post requests
+2025-09-16 17:54:10,279 (INFO)- post.viewsets- Post requests
+2025-09-16 17:54:15,577 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 18:28:27,917 (INFO)- post.viewsets- Post requests
+2025-09-16 18:28:29,769 (INFO)- post.viewsets- Post requests
+2025-09-16 18:28:32,006 (INFO)- post.viewsets- Post requests
+2025-09-16 18:28:45,183 (ERROR)- django.request- Internal Server Error: /api/posts/6/
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/post/viewsets.py", line 43, in destroy
+    instance = PostService.destroy(pk)
+  File "/usr/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/services/post_service.py", line 44, in destroy
+    post.destroy()
+AttributeError: 'Post' object has no attribute 'destroy'
+2025-09-16 18:29:10,242 (INFO)- post.viewsets- Post requests
+2025-09-16 18:29:11,855 (INFO)- post.viewsets- Post requests
+2025-09-16 18:29:12,969 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 18:29:13,979 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 18:29:14,950 (INFO)- post.viewsets- Post requests
+2025-09-16 18:29:14,959 (INFO)- post.viewsets- Post requests
+2025-09-16 18:29:18,906 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 18:31:22,576 (INFO)- post.viewsets- Post requests
+2025-09-16 18:31:23,602 (INFO)- post.viewsets- Post requests
+2025-09-16 18:31:25,492 (INFO)- post.viewsets- Post requests
+2025-09-16 18:31:28,057 (ERROR)- django.request- Internal Server Error: /api/posts/6/
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/post/viewsets.py", line 44, in destroy
+    self.perform_destroy(instance)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 95, in perform_destroy
+    instance.delete()
+AttributeError: 'NoneType' object has no attribute 'delete'
+2025-09-16 18:31:42,134 (INFO)- post.viewsets- Post requests
+2025-09-16 18:31:43,122 (INFO)- post.viewsets- Post requests
+2025-09-16 18:31:44,068 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 18:31:45,015 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 18:31:46,014 (INFO)- post.viewsets- Post requests
+2025-09-16 18:31:46,023 (INFO)- post.viewsets- Post requests
+2025-09-16 18:31:50,688 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 18:35:47,710 (INFO)- post.viewsets- Post requests
+2025-09-16 18:35:48,717 (INFO)- post.viewsets- Post requests
+2025-09-16 18:35:50,640 (INFO)- post.viewsets- Post requests
+2025-09-16 18:35:52,243 (ERROR)- django.request- Internal Server Error: /api/posts/6/
+Traceback (most recent call last):
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/post/viewsets.py", line 44, in destroy
+    self.perform_destroy(instance)
+  File "/mnt/c/users/Maria Jessica/downloads/codeleap/.venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 95, in perform_destroy
+    instance.delete()
+AttributeError: 'NoneType' object has no attribute 'delete'
+2025-09-16 18:36:06,353 (INFO)- post.viewsets- Post requests
+2025-09-16 18:36:07,335 (INFO)- post.viewsets- Post requests
+2025-09-16 18:36:08,292 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 18:36:09,219 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 18:36:10,211 (INFO)- post.viewsets- Post requests
+2025-09-16 18:36:10,223 (INFO)- post.viewsets- Post requests
+2025-09-16 18:36:14,072 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 18:57:53,390 (INFO)- post.viewsets- Post requests
+2025-09-16 18:57:54,383 (INFO)- post.viewsets- Post requests
+2025-09-16 18:57:56,250 (INFO)- post.viewsets- Post requests
+2025-09-16 18:57:58,124 (INFO)- post.viewsets- Post requests
+2025-09-16 18:57:59,046 (INFO)- post.viewsets- Post requests
+2025-09-16 18:57:59,980 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 18:58:01,383 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 18:58:02,287 (INFO)- post.viewsets- Post requests
+2025-09-16 18:58:02,295 (INFO)- post.viewsets- Post requests
+2025-09-16 18:58:07,800 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 20:43:10,450 (INFO)- post.viewsets- Post requests
+2025-09-16 20:43:11,549 (INFO)- post.viewsets- Post requests
+2025-09-16 20:43:13,468 (INFO)- post.viewsets- Post requests
+2025-09-16 20:43:15,484 (INFO)- post.viewsets- Post requests
+2025-09-16 20:43:16,433 (INFO)- post.viewsets- Post requests
+2025-09-16 20:43:17,397 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 20:43:18,332 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 20:43:19,294 (INFO)- post.viewsets- Post requests
+2025-09-16 20:43:19,303 (INFO)- post.viewsets- Post requests
+2025-09-16 20:43:23,107 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 20:50:08,561 (INFO)- post.viewsets- Post requests
+2025-09-16 20:50:09,543 (INFO)- post.viewsets- Post requests
+2025-09-16 20:50:11,433 (INFO)- post.viewsets- Post requests
+2025-09-16 20:50:13,363 (INFO)- post.viewsets- Post requests
+2025-09-16 20:50:14,341 (INFO)- post.viewsets- Post requests
+2025-09-16 20:50:15,285 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-16 20:50:16,244 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-16 20:50:17,181 (INFO)- post.viewsets- Post requests
+2025-09-16 20:50:17,189 (INFO)- post.viewsets- Post requests
+2025-09-16 20:50:21,058 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-16 20:52:10,676 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-09-16 20:53:56,559 (INFO)- post.viewsets- Post requests

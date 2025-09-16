@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from auth.permissions import UserPermission
 from rest_framework.decorators import action
 from django.core.cache import cache
+from services.post_service import PostService
 import logging
 
 logger = logging.getLogger( __name__ )
@@ -24,29 +25,22 @@ class PostViewSet(AbstractViewSet):
         logger.info("Post requests")
         posts = cache.get('post_objects')
         if not posts:
-            logger.warning("POST request received com no results.")
-            posts = Post.objects.all()            
+            posts = PostService.list()          
             cache.set('post_objects', posts)
         return posts
         
     
     def get_object_by_id(self):
-        obj = Post.objects.get(self.kwargs['pk'])
-        return obj
+        post = PostService.get(self.kwargs['pk'])
+        return post
         
     def patch(self, request, pk):
-        try:
-            post = Post.objects.get_object_by_id(pk=pk)
-        except Exception as e:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        post = PostService.patch(request.data, pk=pk)
+        serializer = PostSerializer(post)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     
-    def destroy(self, request, *args, **kwargs):
-        instance = self.get_object()
-        self.perform_destroy(instance)
+    def destroy(self, request, pk=None):
+        PostService.delete(pk)
         return Response({}, status=status.HTTP_200_OK)
     
     @action(methods=['post'], detail=True)

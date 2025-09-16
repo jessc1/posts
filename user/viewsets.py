@@ -2,8 +2,8 @@ from rest_framework import viewsets
 from abstract.viewsets import AbstractViewSet
 from user.serializers import UserSerializer
 from user.models import User
-from django.core.cache import cache
 from auth.permissions import UserPermission
+from services.user_service import UserService
 
 
 class UserViewSet(AbstractViewSet):
@@ -12,11 +12,12 @@ class UserViewSet(AbstractViewSet):
     serializer_class = UserSerializer
 
     def get_queryset(self):
+        users = UserService.list()
         if self.request.user.is_superuser:
-            return User.objects.all()  
-        return User.objects.exclude(is_superuser=True)
+            return users
+        return users.objects.exclude(is_superuser=True)
     
     def get_object_by_id(self):
-        obj = User.objects.get(self.kwargs['pk'])
-        self.check_object_permissions(self.request, obj)
-        return obj
+        user = UserService.get(self.kwargs['pk'])
+        self.check_object_permissions(self.request, user)
+        return user
