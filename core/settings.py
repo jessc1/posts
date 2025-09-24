@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 from datetime import timedelta
+from dotenv import load_dotenv
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-se@_#9onas_9_e+r=*2eyin49n6yfd3w=r1@(xj%h7z(re3&4v'
+#SECRET_KEY = 'django-insecure-se@_#9onas_9_e+r=*2eyin49n6yfd3w=r1@(xj%h7z(re3&4v'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -101,11 +103,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'posts',
-        'USER': 'postgres',
-        'PASSWORD':'mktj',
-        'HOST': 'localhost',
-        'PORT':'5432',
+        'NAME': os.getenv('DATABASE_NAME'),
+        'USER': os.getenv('DATABASE_USER'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'HOST': os.getenv('DATABASE_HOST'),
+        'PORT': os.getenv('DATABASE_PORT'),
         
     }
 }
@@ -220,3 +222,4 @@ LOGGING = {
         }
     },
 }
+SWAGGER_USE_COMPAT_RENDERERS = False

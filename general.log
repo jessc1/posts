@@ -295,3 +295,34 @@ AttributeError: 'NoneType' object has no attribute 'delete'
 2025-09-16 20:50:21,058 (WARNING)- django.request- Unauthorized: /api/posts/
 2025-09-16 20:52:10,676 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
 2025-09-16 20:53:56,559 (INFO)- post.viewsets- Post requests
+2025-09-24 15:17:07,255 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-09-24 15:21:06,551 (INFO)- post.viewsets- Post requests
+2025-09-24 15:21:07,883 (INFO)- post.viewsets- Post requests
+2025-09-24 15:21:09,922 (INFO)- post.viewsets- Post requests
+2025-09-24 15:21:11,962 (INFO)- post.viewsets- Post requests
+2025-09-24 15:21:12,987 (INFO)- post.viewsets- Post requests
+2025-09-24 15:21:14,059 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-24 15:21:15,068 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-24 15:21:16,078 (INFO)- post.viewsets- Post requests
+2025-09-24 15:21:16,088 (INFO)- post.viewsets- Post requests
+2025-09-24 15:21:20,195 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-24 17:53:18,165 (INFO)- post.viewsets- Post requests
+2025-09-24 17:53:19,544 (INFO)- post.viewsets- Post requests
+2025-09-24 17:53:21,727 (INFO)- post.viewsets- Post requests
+2025-09-24 17:53:23,664 (INFO)- post.viewsets- Post requests
+2025-09-24 17:53:24,614 (INFO)- post.viewsets- Post requests
+2025-09-24 17:53:26,136 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-24 17:53:27,129 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-24 17:53:28,254 (INFO)- post.viewsets- Post requests
+2025-09-24 17:53:28,264 (INFO)- post.viewsets- Post requests
+2025-09-24 17:53:33,584 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-24 17:58:45,322 (INFO)- post.viewsets- Post requests
+2025-09-24 17:58:46,546 (INFO)- post.viewsets- Post requests
+2025-09-24 17:58:48,685 (INFO)- post.viewsets- Post requests
+2025-09-24 17:58:50,916 (INFO)- post.viewsets- Post requests
+2025-09-24 17:58:51,388 (INFO)- post.viewsets- Post requests
+2025-09-24 17:58:52,348 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-24 17:58:53,296 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-24 17:58:54,231 (INFO)- post.viewsets- Post requests
+2025-09-24 17:58:54,240 (INFO)- post.viewsets- Post requests
+2025-09-24 17:58:58,654 (WARNING)- django.request- Unauthorized: /api/posts/
