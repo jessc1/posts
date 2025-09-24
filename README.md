@@ -19,20 +19,20 @@ frameworks:  django, django rest framework. database: postgres
 commands:
 
  start the django server
-```staa
- uv run python manage.py runserver
+```
+ uv run --env-file .env python manage.py runserver
 ```
 
  to create database migration
 ```
- uv run python manage.py  makemigrations
+ uv run --env-file .env python manage.py  makemigrations
 ```
 
 applying  the migration
 ```
-uv run python manage.py migrate
+uv run --env-file .env python manage.py migrate
 ```
 tests
 ```
-uv run pytest
+uv run --env-file .env pytest
 ```

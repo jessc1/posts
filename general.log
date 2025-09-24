@@ -326,3 +326,14 @@ AttributeError: 'NoneType' object has no attribute 'delete'
 2025-09-24 17:58:54,231 (INFO)- post.viewsets- Post requests
 2025-09-24 17:58:54,240 (INFO)- post.viewsets- Post requests
 2025-09-24 17:58:58,654 (WARNING)- django.request- Unauthorized: /api/posts/
+2025-09-24 18:13:01,271 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-09-24 18:25:48,240 (INFO)- post.viewsets- Post requests
+2025-09-24 18:25:49,284 (INFO)- post.viewsets- Post requests
+2025-09-24 18:25:51,164 (INFO)- post.viewsets- Post requests
+2025-09-24 18:25:53,037 (INFO)- post.viewsets- Post requests
+2025-09-24 18:25:53,975 (INFO)- post.viewsets- Post requests
+2025-09-24 18:25:55,074 (WARNING)- django.request- Unauthorized: /api/posts/9/
+2025-09-24 18:25:55,997 (WARNING)- django.request- Unauthorized: /api/posts/10/
+2025-09-24 18:25:56,909 (INFO)- post.viewsets- Post requests
+2025-09-24 18:25:56,918 (INFO)- post.viewsets- Post requests
+2025-09-24 18:26:00,687 (WARNING)- django.request- Unauthorized: /api/posts/
